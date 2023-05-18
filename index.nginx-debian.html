@@ -1,0 +1,49 @@
+	 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Google</title>
+    <style>
+      #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #logo {
+        margin-bottom: 20px;
+      }
+      @keyframes move-right {
+        from { left: 0px; }
+        to { left: 300px; }
+    }
+
+    div {
+      animation: move-right 2s ease-in-out infinite alternate;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+      #logo:hover {
+        margin-bottom: 20px;
+        height: 50vh;
+      }
+  </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+      </div>
+      <form action="https://www.google.com/search">
+        <input type="text" name="q" id="search-box">
+        <button type="submit">Buscar</button>
+      <div style="position: absolute; top: 0px; left: 0px;">
+        <img src="reloj-imagen-animada-0141.gif" alt="monigote">
+      </div>  
+      </form>
+    </div>
+  </body>
+</html>
+
